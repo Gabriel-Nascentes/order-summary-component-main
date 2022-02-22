@@ -1,0 +1,128 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Variaveis */
+:root{
+    --color-blue-pale: hsl(225, 100%, 94%);
+    --color-blue-bright: hsl(245, 75%, 52%);
+    --color-white:#fff;
+
+    --color1:hsl(225, 100%, 98%);
+    --color2: hsl(224, 23%, 55%);
+    --color3: hsl(223, 47%, 23%);
+}
+
+/*Reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-image: url(/src/img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+    color: #000;
+}
+
+.main-container{
+    background: var(--color-white);
+    margin: auto;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1em;
+    box-shadow: 1em 4em 1em var(--color2);
+
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.main-information{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.product{
+    border-radius: 1em;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-between;
+}
+.product img{
+    height: 100%;
+}
+.product a{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.title, .main-information, .product, .button-start, .button-cancel{
+    padding: 1.1em ;
+}
+
+.title{
+    color: var(--color3);
+}
+.information{
+    color: var(--color2);
+    padding-bottom: 2em;
+}
+.plan{
+    color: var(--color3);
+    font-weight: 900;
+}
+.valor{
+    color: var(--color2);
+}
+
+.button-start button{
+    background-color:var(--color-blue-bright);
+    color: var(--color-white);
+    width: 100%;
+    height: 50px;
+    border-radius: 1em;
+    border:none;
+    box-shadow: 0 1em 1em var(--color2);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.button-start button:hover{
+    background-color:var(--color3);
+}
+
+
+.button-cancel button{
+    background-color: Transparent;
+    border:none;
+    color: var(--color2);
+    font-weight: 900;
+    cursor: pointer;
+
+}
